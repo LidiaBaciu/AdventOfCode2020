@@ -1,28 +1,19 @@
-package days;
+package day01;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import day01.utils.InputFileReader;
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Scanner;
 import java.util.Set;
 
 public class DayOne {
-    public static Set<Integer> getExpenses(String expensesPath) throws FileNotFoundException {
-        FileReader fr = new FileReader(expensesPath);
-        Scanner inFile = new Scanner(fr);
-        Set<Integer> integerSet = new HashSet<>();
 
-        while (inFile.hasNext())
-        {
-            int currentNumber = Integer.parseInt(inFile.nextLine());
-            if(currentNumber <= 2020){
-                integerSet.add(currentNumber);
-            }
-        }
-
-        inFile.close();
-        return integerSet;
+    public static void solveDayOne(){
+        String expensesPath = "D:\\AdventOfCode\\AdventOfCode2020\\src\\day01\\expenses.txt";
+        InputFileReader inputFileReader = new InputFileReader(expensesPath);
+        Set<Integer> inputSet = inputFileReader.readSetFromInputFile();
+        ArrayList<Integer> result = findTwoElementsWithGivenSum(inputSet, 2020);
+        System.out.println("Result for two numbers is: " + result.get(0) * result.get(1));
+        result = findThreeElementsWithGivenSum(inputSet, 2020);
+        System.out.println("Result for three numbers is: " + result.get(0) * result.get(1) * result.get(2));
     }
 
     public static ArrayList<Integer> findTwoElementsWithGivenSum(Set<Integer> inputSet, int sum) {
