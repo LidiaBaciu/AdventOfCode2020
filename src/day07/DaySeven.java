@@ -25,7 +25,6 @@ public class DaySeven {
             String hashKey = entry.getKey();
             HashMap<String, Integer> hashValue = entry.getValue();
             if(hashValue.containsKey(searched) && !bagList.contains(hashKey)){
-                System.out.println(hashKey + " " + hashValue);
                 bagList.add(hashKey);
                 containsBag(hashKey, bagList);
             }
