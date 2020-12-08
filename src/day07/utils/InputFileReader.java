@@ -9,12 +9,10 @@ import java.util.regex.Pattern;
 public class InputFileReader {
 
     private String inputFilePath;
-    private HashMap<String, String> hashMap;
     private HashMap<String, HashMap<String, Integer>> bagMaps;
 
     public InputFileReader(String inputFilePath){
         this.inputFilePath = inputFilePath;
-        hashMap = new HashMap<>();
         bagMaps = new HashMap<>();
     }
 
