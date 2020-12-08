@@ -4,6 +4,7 @@ import day03.DayThree;
 import day04.DayFour;
 import day05.DayFive;
 import day06.DaySix;
+import day07.DaySeven;
 
 public class AdventOfCodeMain {
     public static void main(String[] args) {
@@ -12,7 +13,8 @@ public class AdventOfCodeMain {
 //        DayThree.solveDayThree();
 //        DayFour.solveDayFour();
 //        DayFive.solveDayFive();
-        DaySix.solveDaySix();
+//        DaySix.solveDaySix();
+        DaySeven.solveDaySeven();
     }
 
 }
