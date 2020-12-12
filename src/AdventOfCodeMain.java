@@ -6,6 +6,7 @@ import day05.DayFive;
 import day06.DaySix;
 import day07.DaySeven;
 import day08.DayEight;
+import day09.DayNine;
 
 public class AdventOfCodeMain {
     public static void main(String[] args) {
@@ -16,7 +17,8 @@ public class AdventOfCodeMain {
 //        DayFive.solveDayFive();
 //        DaySix.solveDaySix();
 //        DaySeven.solveDaySeven();
-        DayEight.solveDayEight();
+//        DayEight.solveDayEight();
+        DayNine.solveDayEight();
     }
 
 }
